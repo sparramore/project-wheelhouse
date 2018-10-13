@@ -7,6 +7,14 @@ import SignIn from "./components/SignIn";
 import SignUp from "./components/SignUp";
 import Home from "./components/Home";
 
+import Index from "./pages/Default/default";
+import Wheelhouse from "./pages/Wheelhouse/wheelhouse";
+import NoMatch from "./pages/NoMatch";
+import Dashboard from "./components/Dashboard/Dashboard";
+import UserList from "./components/UserList/userList";
+import Knowledge from "./components/KnowledgeList/KnowledgeList";
+import Bubble from "./components/KnowledgeList/KnowledgeBubble";
+
 class App extends Component {
   state = {
     username: "",
@@ -116,6 +124,12 @@ class App extends Component {
           } 
         }
         }/>
+        <Route exact path = "/user" render = {()=> {
+          return <UserList/>
+        }}/>
+        <Route exact path = "/knowledges" render = {()=> {
+          return <Knowledge/>
+        }}/>
         </div>
       </Router>
     );
