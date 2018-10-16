@@ -1,4 +1,4 @@
-const User = require("../models/user").User;
+const User = require("../models/").User;
 module.exports = function (passport) {
 	const path = require("path");
 	const router = require('express').Router();

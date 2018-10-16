@@ -1,4 +1,4 @@
-const db = require("../user/");
+const db = require("../models");
 const MongoClient = require('mongodb').MongoClient;
 
 
