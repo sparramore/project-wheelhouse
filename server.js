@@ -2,7 +2,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const app = express();
 const PORT = process.env.PORT || 3001;
-const models = require("./models/user/");
+const models = require("./models");
 
 
 const passport = require("passport");
